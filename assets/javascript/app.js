@@ -1,11 +1,11 @@
 //connect firebase
 var config = {
-    apiKey: "AIzaSyDP9z_IucdD0Aneqog4OQt-tt3BQhS0oEs",
-    authDomain: "thoughtkeeper-80696.firebaseapp.com",
-    databaseURL: "https://thoughtkeeper-80696.firebaseio.com",
-    projectId: "thoughtkeeper-80696",
-    storageBucket: "thoughtkeeper-80696.appspot.com",
-    messagingSenderId: "271875655252"
+    apiKey: "AIzaSyCd25itEtU1gBEoGZPWa4Q4z7xjAc7Vx2c",
+     authDomain: "keeper-96b35.firebaseapp.com",
+     databaseURL: "https://keeper-96b35.firebaseio.com",
+     projectId: "keeper-96b35",
+     storageBucket: "keeper-96b35.appspot.com",
+     messagingSenderId: "300480516087"
   };
   firebase.initializeApp(config);
   
@@ -73,6 +73,26 @@ var config = {
   }, function (error) {
    console.log("Error: " + error.code);
   });
+  
+  
+  $(document).ready(function(){
+    $('#box2').hide();
+  
+      $('a#food-btn').click(function() {
+        $('.column').hide();
+        $('.column2').hide();
+        $('#box2').show();
+      })
+  
+      $('a#journal-btn').click(function() {
+        $('#box2').hide();
+        $('.column').show();
+        $('.column2').show();
+        
+      })
+  
+        });
+  
   
   
   
